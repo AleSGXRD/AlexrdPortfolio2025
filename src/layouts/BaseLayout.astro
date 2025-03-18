@@ -1,0 +1,33 @@
+---
+// src/layouts/BaseLayout.astro
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-gray-900 text-white py-4">
+    <nav class="container mx-auto flex justify-between items-center px-4">
+      <a href="/" class="text-xl font-bold">Mi Portfolio</a>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="hover:text-gray-300">Inicio</a></li>
+        <li><a href="/about" class="hover:text-gray-300">Sobre mí</a></li>
+        <li><a href="/education" class="hover:text-gray-300">Educación</a></li>
+        <li><a href="/contact" class="hover:text-gray-300">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="min-h-screen">
+    <slot />
+  </main>
+  <footer class="bg-gray-900 text-white py-4 text-center">
+    <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
