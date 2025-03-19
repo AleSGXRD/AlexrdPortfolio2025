@@ -35,3 +35,45 @@
 .swiper-container img:hover {
   transform: scale(1.05);
 }
+/* styles/slider.css */
+
+/* Personalización de las flechas de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #FF7D5C; /* Cambia el color de las flechas */
+  border-radius: 50%; /* Hace que el fondo sea circular */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Alto del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 0.35); /* Cambia el fondo al pasar el mouse */
+  backdrop-filter: blur(0.5rem);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* Tamaño del ícono de la flecha */
+  font-weight: bold; /* Grosor del ícono */
+}
+
+/* styles/slider.css */
+
+/* Personalización de los puntos de paginación */
+.swiper-pagination-bullet {
+  width: 12px; /* Ancho del bullet */
+  height: 12px; /* Alto del bullet */
+  background-color: #ccc; /* Color de fondo del bullet */
+  opacity: 1; /* Opacidad del bullet */
+  margin: 0 5px; /* Espacio entre bullets */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF7D5C; /* Color de fondo del bullet activo */
+}
