@@ -12,14 +12,13 @@ const { title } = Astro.props;
   <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body class="text-gray-800 bg-[#171717]">
-  <header class="bg-[171717] text-gray-100 backdrop-blur-3xl backdrop-opacity-50 py-4">
+  <header class="top-0 left-0 right-0 fixed text-gray-100 backdrop-blur-xl bg-[#17171773] py-4 z-[999]">
     <nav class="container max-w-7xl mx-auto flex justify-between items-center px-4">
-      <a href="/" class="text-xl font-bold">Mi Portfolio</a>
+      <a href="/" class="text-xl font-bold"></a>
       <ul class="flex space-x-4">
         <li><a href="/" class="hover:text-gray-300">Inicio</a></li>
         <li><a href="/about" class="hover:text-gray-300">Sobre mí</a></li>
-        <li><a href="/education" class="hover:text-gray-300">Educación</a></li>
-        <li><a href="/contact" class="hover:text-gray-300">Contacto</a></li>
+        <p>|</p>
       </ul>
     </nav>
   </header>
