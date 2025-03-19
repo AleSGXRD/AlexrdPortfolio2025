@@ -7,6 +7,7 @@ const projects = [
         icon : "assets/tecnicell.jpeg",
         title: "Tecnicell",
         link: "https://github.com/AleSGXRD/Tecnicell",
+        linkType: 1,
         description: "Aplicación web con el objetivo de gestionar la información en el taller de reparación de celulares Tecnicell en Cuba. Esté proyecto fue mi primer proyecto como freelancer donde no solo aprendí a utilizar tecnologías como Angular y .NET, también aprendi a desplegar apps en local con Nginx, a tratar con clientes, e incluso mejorar mi lógica al crear componentes y demas gracias a su feedbacks. ",
         technologies: [
             "Angular",
@@ -28,6 +29,7 @@ const projects = [
         icon : "assets/bluediamond.jpg",
         title: "BlueDiamond",
         link: "https://github.com/AleSGXRD/Bluediamond",
+        linkType: 1,
         description: "Aplicación web para la generación de invoices y estimados a los clientes de la empresa BlueDiamond, líder en mantenimiento y reparación de piscinas en Estados Unidos. Donde aprendí sobre librerías de generación de PDF para lograr el objetivo principal de la app, Nodemailer para enviar correos a los clientes para automatizar este proceso e incluso aprendí a usar NestJS para la creación del servidor. ",
         technologies: [
             "Angular",
@@ -41,6 +43,28 @@ const projects = [
             '/assets/bluediamond/2.jpg',
             '/assets/bluediamond/3.jpg',
             '/assets/bluediamond/4.jpg',
+        ]
+    },
+    {
+        icon : "assets/angelclinic.jpg",
+        title: "Angel Clínica",
+        link: "https://angelclinica.netlify.app/",
+        linkType: 0,
+        description: "Página web para la clínica Angel en Portugal, tristemente el proyecto no se llevo hasta el final por problemas en la clinica por lo que decidieron abandonar el proyecto. Sin embargo con este proyecto aprendí a utilizar Astro aprovechar las ventajas que este ofrece, además donde aprendi a usar Swiper para hacer couroseles.",
+        technologies: [
+            "Astro",
+            "Tailwind",
+            "React",
+            "Swiper"
+        ],
+        images:[
+            '/assets/angelclinic/1.jpg',
+            '/assets/angelclinic/2.jpg',
+            '/assets/angelclinic/3.jpg',
+            '/assets/angelclinic/4.jpg',
+            '/assets/angelclinic/5.jpg',
+            '/assets/angelclinic/6.jpg',
+            '/assets/angelclinic/7.jpg',
         ]
     }
 ]
@@ -58,6 +82,7 @@ const projects = [
                         {icon}={project.icon}
                         {title}={project.title}
                         {link}={project.link}
+                        {linkType}={project.linkType}
                         {description}={project.description}
                         {technologies}={project.technologies}
                         {images}={project.images}
