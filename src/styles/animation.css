@@ -1,0 +1,45 @@
+/* animations.css */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-up animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplica las animaciones a los elementos */
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease-out forwards;
+  }
+  
+  /* Retraso para animaciones escalonadas */
+  .delay-1 {
+    animation-delay: 0.2s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-3 {
+    animation-delay: 0.6s;
+  }
