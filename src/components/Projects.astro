@@ -1,0 +1,70 @@
+---
+import Project from "./utils/Project.astro";
+import Slider from "./utils/Slider.jsx";
+
+const projects = [
+    {
+        title: "Tecnicell",
+        link: "https://github.com/AleSGXRD/Tecnicell",
+        description: "Aplicación web con el objetivo de gestionar la información en el taller de reparación de celulares Tecnicell en Cuba. Esté proyecto fue mi primer proyecto como freelancer donde no solo aprendí a utilizar tecnologías como Angular y .NET, también aprendi a desplegar apps en local con Nginx, a tratar con clientes, e incluso mejorar mi lógica al crear componentes y demas gracias a su feedbacks. ",
+        technologies: [
+            "Angular",
+            ".NET",
+            "Tailwind",
+            "Nginx"
+        ],
+        images:[
+            '/assets/tecnicell/1.png',
+            '/assets/tecnicell/2.png',
+            '/assets/tecnicell/3.png',
+            '/assets/tecnicell/4.png',
+            '/assets/tecnicell/5.png',
+            '/assets/tecnicell/6.png',
+        ]
+    },
+    {
+        title: "BlueDiamond",
+        link: "https://github.com/AleSGXRD/Tecnicell",
+        description: "Aplicación web para la generación de invoices y estimados a los clientes de la empresa BlueDiamond, líder en mantenimiento y reparación de piscinas en Estados Unidos. Donde aprendí sobre librerías de generación de PDF para lograr el objetivo principal de la app, Nodemailer para enviar correos a los clientes para automatizar este proceso e incluso aprendí a usar NestJS para la creación del servidor. ",
+        technologies: [
+            "Angular",
+            "NestJS",
+            "Tailwind",
+            "Nginx"
+        ],
+        images:[
+            '/assets/tecnicell/1.png',
+            '/assets/tecnicell/2.png',
+            '/assets/tecnicell/3.png',
+            '/assets/tecnicell/4.png',
+            '/assets/tecnicell/5.png',
+            '/assets/tecnicell/6.png',
+        ]
+    }
+]
+
+---
+
+<section class="grid grid-cols-1 lg:grid-cols-5 max-w-7xl w-full mx-auto justify-center text-gray-100
+        gap-8">
+    <h3 class="text-2xl font-medium text-right">Proyectos</h3>
+    <div class="lg:col-span-4 border-l-[0.5px] border-zinc-400">
+        {
+            projects.map((project:any)=> (
+                <>
+                    <Project {title}={project.title}
+                        {link}={project.link}
+                        {description}={project.description}
+                        {technologies}={project.technologies}
+                        {images}={project.images}
+                    />
+                    <hr class="border-[0.5px] text-zinc-400 mx-8">
+                </>
+            ))
+        }
+    </div>
+</section>
+
+<style>
+
+</style>
