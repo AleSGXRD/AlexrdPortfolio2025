@@ -19,8 +19,8 @@ const { title } = Astro.props;
       <div class="">
         <div id="scroll-div" class="hidden">
           <div class="flex flex-row items-center gap-4 ">
-            <img class="w-12 h-12 rounded-full shadow-sm" src="assets/profile.jpeg">
-            <div class="flex flex-col justify-start">
+            <img class="hidden sm:flex w-12 h-12 rounded-full shadow-sm" src="assets/profile.jpeg">
+            <div class="hidden sm:flex flex-col justify-start ">
               <div class="text-lg font-bold">AleXRD</div>
               <a class="text-sm font-light text-gray-400 hover:text-[#FF7D5C] transition-colors "target="_blank" href="mailto:alesgxrd@gmail.com">alesgxrd@gmail.com</a>
             </div>
@@ -78,8 +78,4 @@ document.addEventListener('DOMContentLoaded', () => {
     display: block; /* Visible cuando no tiene la clase 'hidden' */
   }
 
-  /* Clase 'hidden' para ocultar elementos */
-  .hidden {
-    display: none;
-  }
 </style>
