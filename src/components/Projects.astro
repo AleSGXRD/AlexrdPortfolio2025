@@ -2,13 +2,261 @@
 import Project from "./utils/Project.astro";
 import '../styles/animation.css'
 
+// const projects = [
+//     {
+//         icon: "assets/portal-dos-oculos.webp",
+//         title: "Portal dos Óculos",
+//         link: "https://portal-dos-oculos.vercel.app",
+//         linkType: 0,
+//         description: "Sitio web institucional para una óptica en Brasil, enfocado en una experiencia de atención digital moderna. El proyecto destaca la rapidez en presupuestos, la asesoría personalizada vía WhatsApp y la presentación de armações modernas y lentes de alta calidad. Desarrollado con Astro, integrando componentes React y Tailwind CSS para un diseño limpio, profesional y optimizado para conversión.",
+//         technologies: [
+//             "Astro",
+//             "React",
+//             "Tailwind",
+//             "Swiper",
+//             "GSAP"
+//         ],
+//         images: [
+//             "/assets/portal-dos-oculos/1.webp",
+//             "/assets/portal-dos-oculos/2.webp",
+//             "/assets/portal-dos-oculos/3.webp",
+//             "/assets/portal-dos-oculos/4.webp",
+//             "/assets/portal-dos-oculos/5.webp",
+//             "/assets/portal-dos-oculos/6.webp",
+//             "/assets/portal-dos-oculos/7.webp",
+//             "/assets/portal-dos-oculos/8.webp",
+//             "/assets/portal-dos-oculos/9.webp"
+//         ]
+//     },
+//     {
+//         icon: "assets/pink.webp",
+//         title: "Pink Ótica",
+//         link: "https://pinkotica.vercel.app",
+//         linkType: 0,
+//         description: "Landing page desarrollada para una óptica femenina en Boa Vista, Brasil, pensada para mujeres que buscan combinar salud visual y estilo. El sitio enfatiza una identidad visual elegante, moderna y femenina, con foco en lentes digitales y armações seleccionadas. Construido con Astro y Tailwind CSS, incorporando React para componentes interactivos.",
+//         technologies: [
+//             "Astro",
+//             "React",
+//             "Tailwind",
+//             "Swiper"
+//         ],
+//         images: [
+//             "/assets/pink/1.webp",
+//             "/assets/pink/2.webp",
+//             "/assets/pink/3.webp",
+//             "/assets/pink/4.webp",
+//             "/assets/pink/5.webp",
+//             "/assets/pink/6.webp"
+//         ]
+//     },
+//     {
+//         icon: "assets/haas.webp",
+//         title: "Haas Piscinas",
+//         link: "https://haas-roraima.vercel.app",
+//         linkType: 0,
+//         description: "Sitio web corporativo para una empresa de construcción e instalación de piscinas en Roraima, Brasil. El proyecto transmite confianza, calidad y profesionalismo, destacando procesos constructivos, seguridad y acabados premium. Desarrollado con Astro y Tailwind CSS, con componentes React para una experiencia visual atractiva y fluida.",
+//         technologies: [
+//             "Astro",
+//             "React",
+//             "Tailwind",
+//             "Swiper"
+//         ],
+//         images: [
+//             "/assets/haas/1.png",
+//             "/assets/haas/2.png",
+//             "/assets/haas/3.png",
+//             "/assets/haas/4.png",
+//             "/assets/haas/5.png",
+//             "/assets/haas/6.png",
+//             "/assets/haas/7.png",
+//             "/assets/haas/8.png"
+//         ]
+//     },
+//     {
+//         icon : "assets/bisuchic.png",
+//         title: "BisuChic",
+//         link: "https://bisuchic.vercel.app",
+//         linkType: 0,
+//         description: "Sitio web catálogo para los artículos de Bisuchic, un emprendimiento de bisutería en Cuba. Desarrollado con Astro, integra componentes de React y utiliza librerías externas como GSAP, Swiper y Tailwind CSS para lograr un diseño atractivo y funcional.",
+//         technologies: [
+//             "Astro",
+//             "React",
+//             "GSAP",
+//             "Swiper",
+//             "Tailwind",
+//         ],
+//         images:[
+//             '/assets/bisuchic/1.png',
+//             '/assets/bisuchic/2.png',
+//             '/assets/bisuchic/3.png',
+//             '/assets/bisuchic/4.png',
+//             '/assets/bisuchic/5.png',
+//         ]
+//     },
+//     // {
+//     //     icon : "assets/gilbesan.png",
+//     //     title: "Gilbesan LLC",
+//     //     link: "https://gilbesan-llc.vercel.app/",
+//     //     linkType: 0,
+//     //     description: "Sitio web para un emprendimiento de construcción y diseño de escaleras para interiores en Estados Unidos. Desarrollado con Astro, el proyecto se encuentra actualmente en fase de desarrollo.",
+//     //     technologies: [
+//     //         "Astro",
+//     //         "Tailwind",
+//     //         "React",
+//     //         "Swiper",
+//     //         "GSAP"
+//     //     ],
+//     //     images:[
+//     //         '/assets/gilbesan/1.png',
+//     //         '/assets/gilbesan/2.png',
+//     //         '/assets/gilbesan/3.png',
+//     //         '/assets/gilbesan/4.png',
+//     //         '/assets/gilbesan/5.png',
+//     //     ]
+//     // },
+//     {
+//         icon : "assets/hogarparapeludos.png",
+//         title: "Hogar para peludos",
+//         link: "https://hogarparapeludos.netlify.app/",
+//         linkType: 0,
+//         description: "Hogar para Peludos es un proyecto personal que nació del amor por los animales y de la convicción de que, juntos, podemos marcar la diferencia. Esta plataforma busca convertirse en un puente entre mascotas necesitadas y hogares amorosos, donde cada adopción representa una vida salvada y una familia completa.",
+//         technologies: [
+//             "Astro",
+//             "Tailwind",
+//             "React",
+//             "Swiper"
+//         ],
+//         images:[
+//             '/assets/hogarparapeludos/1.png',
+//             '/assets/hogarparapeludos/2.png',
+//             '/assets/hogarparapeludos/3.png',
+//             '/assets/hogarparapeludos/4.png',
+//             '/assets/hogarparapeludos/5.png',
+//             '/assets/hogarparapeludos/6.png',
+//         ]
+//     },
+//     // {
+//     //     icon : "assets/tallercontroldeequipos.png",
+//     //     title: "Taller control de equipos",
+//     //     link: "https://github.com/AleSGXRD/TallerControlDeEquipos",
+//     //     linkType: 1,
+//     //     description: "Trabajo de culminación de la carrera de Ingeniería Informática que consistió en el desarrollo integral de una aplicación web para la UNE, empresa distribuidora de la energía eléctrica en Cuba. Empleando tecnologías como AngularJS y NestJS, junto con una comunicación constante con el cliente, se optimizó en un 70% el proceso de control de equipos en su taller de informática.",
+//     //     technologies: [
+//     //         "AngularJS",
+//     //         "PrimeNG",
+//     //         "NestJS",
+//     //         "PostgresSql",
+//     //         "Prisma",
+//     //         "Tailwind",
+//     //     ],
+//     //     images:[
+//     //         '/assets/tallercontroldeequipos/1.png',
+//     //         '/assets/tallercontroldeequipos/2.png',
+//     //         '/assets/tallercontroldeequipos/3.png',
+//     //         '/assets/tallercontroldeequipos/4.png',
+//     //         '/assets/tallercontroldeequipos/5.png',
+//     //     ]
+//     // },
+//     // {
+//     //     icon : "assets/tecnicell.jpeg",
+//     //     title: "Tecnicell",
+//     //     link: "https://github.com/AleSGXRD/Tecnicell",
+//     //     linkType: 1,
+//     //     description: "Aplicación web desarrollada con el objetivo de gestionar la información en el taller de reparación de celulares Tecnicell, en Cuba. Este proyecto fue mi primera experiencia como freelancer, en la cual no solo aprendí a utilizar tecnologías como Angular y .NET, sino también a desplegar aplicaciones en un entorno local con Nginx. Además, me permitió adquirir habilidades clave como la gestión de clientes, la mejora de mi lógica de programación mediante la creación de componentes, y la capacidad de adaptarme y evolucionar gracias a su feedback constante.",
+//     //     technologies: [
+//     //         "Angular",
+//     //         ".NET",
+//     //         "SQL",
+//     //         "Tailwind",
+//     //         "Nginx"
+//     //     ],
+//     //     images:[
+//     //         '/assets/tecnicell/1.jpg',
+//     //         '/assets/tecnicell/2.jpg',
+//     //         '/assets/tecnicell/3.jpg',
+//     //         '/assets/tecnicell/4.jpg',
+//     //         '/assets/tecnicell/5.jpg',
+//     //         '/assets/tecnicell/6.jpg',
+//     //     ]
+//     // },
+// ]
+
 const projects = [
+    {
+        icon: "assets/portal-dos-oculos.webp",
+        title: "Portal dos Óculos",
+        link: "https://portal-dos-oculos.vercel.app",
+        linkType: 0,
+        description: "Corporate website for an optical store in Brazil, focused on delivering a modern digital customer experience. The project highlights fast quote requests, personalized assistance via WhatsApp, and the presentation of modern frames and high-quality lenses. Built with Astro, integrating React components and Tailwind CSS for a clean, professional, and conversion-optimized design.",
+        technologies: [
+            "Astro",
+            "React",
+            "Tailwind",
+            "Swiper",
+            "GSAP"
+        ],
+        images: [
+            "/assets/portal-dos-oculos/1.webp",
+            "/assets/portal-dos-oculos/2.webp",
+            "/assets/portal-dos-oculos/3.webp",
+            "/assets/portal-dos-oculos/4.webp",
+            "/assets/portal-dos-oculos/5.webp",
+            "/assets/portal-dos-oculos/6.webp",
+            "/assets/portal-dos-oculos/7.webp",
+            "/assets/portal-dos-oculos/8.webp",
+            "/assets/portal-dos-oculos/9.webp"
+        ]
+    },
+    {
+        icon: "assets/pink.webp",
+        title: "Pink Ótica",
+        link: "https://pinkotica.vercel.app",
+        linkType: 0,
+        description: "Landing page developed for a women-focused optical store in Boa Vista, Brazil, designed for women who want to combine eye health with style. The website emphasizes an elegant, modern, and feminine visual identity, with a strong focus on digital lenses and carefully selected frames. Built with Astro and Tailwind CSS, incorporating React for interactive components.",
+        technologies: [
+            "Astro",
+            "React",
+            "Tailwind",
+            "Swiper"
+        ],
+        images: [
+            "/assets/pink/1.webp",
+            "/assets/pink/2.webp",
+            "/assets/pink/3.webp",
+            "/assets/pink/4.webp",
+            "/assets/pink/5.webp",
+            "/assets/pink/6.webp"
+        ]
+    },
+    {
+        icon: "assets/haas.webp",
+        title: "Haas Piscinas",
+        link: "https://haas-roraima.vercel.app",
+        linkType: 0,
+        description: "Corporate website for a swimming pool construction and installation company in Roraima, Brazil. The project conveys trust, quality, and professionalism, highlighting construction processes, safety standards, and premium finishes. Developed with Astro and Tailwind CSS, using React components to deliver an engaging and smooth visual experience.",
+        technologies: [
+            "Astro",
+            "React",
+            "Tailwind",
+            "Swiper"
+        ],
+        images: [
+            "/assets/haas/1.webp",
+            "/assets/haas/2.webp",
+            "/assets/haas/3.webp",
+            "/assets/haas/4.webp",
+            "/assets/haas/5.webp",
+            "/assets/haas/6.webp",
+            "/assets/haas/7.webp",
+            "/assets/haas/8.webp"
+        ]
+    },
     {
         icon : "assets/bisuchic.png",
         title: "BisuChic",
         link: "https://bisuchic.vercel.app",
         linkType: 0,
-        description: "Sitio web catálogo para los artículos de Bisuchic, un emprendimiento de bisutería en Cuba. Desarrollado con Astro, integra componentes de React y utiliza librerías externas como GSAP, Swiper y Tailwind CSS para lograr un diseño atractivo y funcional.",
+        description: "Catalog website for Bisuchic products, a handmade jewelry business based in Cuba. Developed with Astro, the project integrates React components and uses external libraries such as GSAP, Swiper, and Tailwind CSS to achieve an attractive and functional design.",
         technologies: [
             "Astro",
             "React",
@@ -25,32 +273,55 @@ const projects = [
         ]
     },
     {
-        icon : "assets/gilbesan.png",
-        title: "Gilbesan LLC",
-        link: "https://gilbesan-llc.vercel.app/",
-        linkType: 0,
-        description: "Sitio web para un emprendimiento de construcción y diseño de escaleras para interiores en Estados Unidos. Desarrollado con Astro, el proyecto se encuentra actualmente en fase de desarrollo.",
+        icon: "assets/tecnicell.jpeg",
+        title: "Tecnicell",
+        link: "https://github.com/AleSGXRD/Tecnicell",
+        linkType: 1,
+        description: "Web application developed to manage information for the Tecnicell mobile phone repair workshop in Cuba. This project was my first freelance experience, where I learned not only to work with technologies such as Angular and .NET, but also to deploy applications in a local environment using Nginx. It also helped me develop key skills such as client management, component-based architecture, and the ability to adapt and evolve through continuous client feedback.",
         technologies: [
-            "Astro",
+            "Angular",
+            ".NET",
+            "SQL",
             "Tailwind",
-            "React",
-            "Swiper",
-            "GSAP"
+            "Nginx"
         ],
-        images:[
-            '/assets/gilbesan/1.png',
-            '/assets/gilbesan/2.png',
-            '/assets/gilbesan/3.png',
-            '/assets/gilbesan/4.png',
-            '/assets/gilbesan/5.png',
+        images: [
+            "/assets/tecnicell/1.jpg",
+            "/assets/tecnicell/2.jpg",
+            "/assets/tecnicell/3.jpg",
+            "/assets/tecnicell/4.jpg",
+            "/assets/tecnicell/5.jpg",
+            "/assets/tecnicell/6.jpg"
+        ]
+    },
+    {
+        icon: "assets/tallercontroldeequipos.png",
+        title: "Equipment Control Workshop",
+        link: "https://github.com/AleSGXRD/TallerControlDeEquipos",
+        linkType: 1,
+        description: "Final degree project for the Computer Engineering program, consisting of the end-to-end development of a web application for UNE, the national electric power distribution company in Cuba. Built with AngularJS and NestJS, the system digitized and optimized the equipment control process in the IT workshop, achieving a 70% improvement in efficiency through automation, structured data management, and close collaboration with the client.",
+        technologies: [
+            "AngularJS",
+            "PrimeNG",
+            "NestJS",
+            "PostgreSQL",
+            "Prisma",
+            "Tailwind"
+        ],
+        images: [
+            "/assets/tallercontroldeequipos/1.png",
+            "/assets/tallercontroldeequipos/2.png",
+            "/assets/tallercontroldeequipos/3.png",
+            "/assets/tallercontroldeequipos/4.png",
+            "/assets/tallercontroldeequipos/5.png"
         ]
     },
     {
         icon : "assets/hogarparapeludos.png",
-        title: "Hogar para peludos",
+        title: "Hogar para Peludos",
         link: "https://hogarparapeludos.netlify.app/",
         linkType: 0,
-        description: "Hogar para Peludos es un proyecto personal que nació del amor por los animales y de la convicción de que, juntos, podemos marcar la diferencia. Esta plataforma busca convertirse en un puente entre mascotas necesitadas y hogares amorosos, donde cada adopción representa una vida salvada y una familia completa.",
+        description: "Hogar para Peludos is a personal project born out of a love for animals and the belief that, together, we can make a difference. This platform aims to become a bridge between pets in need and loving homes, where every adoption represents a saved life and a complete family.",
         technologies: [
             "Astro",
             "Tailwind",
@@ -66,57 +337,14 @@ const projects = [
             '/assets/hogarparapeludos/6.png',
         ]
     },
-    {
-        icon : "assets/tallercontroldeequipos.png",
-        title: "Taller control de equipos",
-        link: "https://github.com/AleSGXRD/TallerControlDeEquipos",
-        linkType: 1,
-        description: "Trabajo de culminación de la carrera de Ingeniería Informática que consistió en el desarrollo integral de una aplicación web para la UNE, empresa distribuidora de la energía eléctrica en Cuba. Empleando tecnologías como AngularJS y NestJS, junto con una comunicación constante con el cliente, se optimizó en un 70% el proceso de control de equipos en su taller de informática.",
-        technologies: [
-            "AngularJS",
-            "PrimeNG",
-            "NestJS",
-            "PostgresSql",
-            "Prisma",
-            "Tailwind",
-        ],
-        images:[
-            '/assets/tallercontroldeequipos/1.png',
-            '/assets/tallercontroldeequipos/2.png',
-            '/assets/tallercontroldeequipos/3.png',
-            '/assets/tallercontroldeequipos/4.png',
-            '/assets/tallercontroldeequipos/5.png',
-        ]
-    },
-    {
-        icon : "assets/tecnicell.jpeg",
-        title: "Tecnicell",
-        link: "https://github.com/AleSGXRD/Tecnicell",
-        linkType: 1,
-        description: "Aplicación web desarrollada con el objetivo de gestionar la información en el taller de reparación de celulares Tecnicell, en Cuba. Este proyecto fue mi primera experiencia como freelancer, en la cual no solo aprendí a utilizar tecnologías como Angular y .NET, sino también a desplegar aplicaciones en un entorno local con Nginx. Además, me permitió adquirir habilidades clave como la gestión de clientes, la mejora de mi lógica de programación mediante la creación de componentes, y la capacidad de adaptarme y evolucionar gracias a su feedback constante.",
-        technologies: [
-            "Angular",
-            ".NET",
-            "SQL",
-            "Tailwind",
-            "Nginx"
-        ],
-        images:[
-            '/assets/tecnicell/1.jpg',
-            '/assets/tecnicell/2.jpg',
-            '/assets/tecnicell/3.jpg',
-            '/assets/tecnicell/4.jpg',
-            '/assets/tecnicell/5.jpg',
-            '/assets/tecnicell/6.jpg',
-        ]
-    },
 ]
+
 
 ---
 
 <section id="projects" class=" grid grid-cols-1 px-4 lg:grid-cols-5 max-w-7xl w-full mx-auto justify-center text-gray-100
         gap-8">
-    <h3 class="mx-8 lg:mx-4 slide-up text-2xl font-medium text-right">Proyectos</h3>
+    <h3 class="mx-8 lg:mx-4 slide-up text-2xl font-medium text-right">Projects</h3>
     <hr class="lg:hidden border-[0.5px] text-zinc-400 mx-8">
 
     <div class="lg:col-span-4 border-l-[0.5px] border-zinc-400">
